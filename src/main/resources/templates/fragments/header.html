@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+</head>
+<body>
+
+<div class="container">
+    <div th:fragment="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" th:href="@{/}">Inicio</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/products}">Productos</a></li>
+                        <li><a href="#" th:href="@{/product/new}">Crea un nuevo producto</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="">
+                    <h2>Aplicativo de Productos</h2>
+                    <h3>Productos disponibles</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <img src="../../static/images/NewBannerBOOTS_2.png" width="400"
+                     th:src="@{/images/NewBannerBOOTS_2.png}"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
