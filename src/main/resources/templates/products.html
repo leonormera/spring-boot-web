@@ -17,7 +17,7 @@
                 <th>Codigo</th>
                 <th>Detalle</th>
                 <th>Precio</th>
-                <th>Imagen</th>
+                <th>Categoria</th>
                 <th>Editar</th>
                 <th>Borrar</th>
             </tr>
@@ -26,7 +26,7 @@
                 <td th:text="${product.productId}">codigo producto</td>
                 <td th:text="${product.description}">detalle</td>
                 <td th:text="${product.price}">precio</td>
-                <td><a th:href="${'/product/' + product.id}">imagen</a></td>
+                <td th:text="${product.categoria}">categoria</td>
                 <td><a th:href="${'/product/edit/' + product.id}">Editar</a></td>
                 <td><a th:href="${'/product/delete/' + product.id}">Borrar</a></td>
             </tr>

@@ -1,7 +1,9 @@
-package guru.springframework.repositories;
+package leonor2.springframework.repositories;
 
-import guru.springframework.configuration.RepositoryConfiguration;
-import guru.springframework.domain.Product;
+import leonor.springframework.domain.Product;
+import leonor.springframework.repositories.ProductRepository;
+import leonor2.springframework.configuration.RepositoryConfiguration;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +31,8 @@ public class ProductRepositoryTest {
     public void testSaveProduct(){
         //setup product
         Product product = new Product();
-        product.setDescription("Spring Framework Guru Shirt");
+        product.setDescription("Camisetas Panda");
+        product.setCategoria("Camisetas Infantiles");
         product.setPrice(new BigDecimal("18.95"));
         product.setProductId("1234");
 

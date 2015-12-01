@@ -1,9 +1,10 @@
-package guru.springframework.services;
+package leonor.springframework.services;
 
-import guru.springframework.domain.Product;
-import guru.springframework.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import leonor.springframework.domain.Product;
+import leonor.springframework.repositories.ProductRepository;
 
 @Service
 public class ProductServiceImpl implements ProductService {

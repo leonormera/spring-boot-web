@@ -1,4 +1,4 @@
-package guru.springframework.domain;
+package leonor.springframework.domain;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -14,7 +14,7 @@ public class Product {
 
     private String productId;
     private String description;
-    private String imageUrl;
+    private String categoria;
     private BigDecimal price;
 
     public String getDescription() {
@@ -49,12 +49,12 @@ public class Product {
         this.productId = productId;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public BigDecimal getPrice() {
